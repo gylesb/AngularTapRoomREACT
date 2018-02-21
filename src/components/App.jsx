@@ -3,7 +3,6 @@ import Header from './Header';
 import NavBar from './NavBar';
 import KegList from './KegList';
 import Error404 from './Error404';
-import About from './About';
 import Contact from './Contact';
 import { Switch, Route } from 'react-router-dom';
 
@@ -19,7 +18,6 @@ function App(){
       `}</style>
       <NavBar/>
       <Header/>
-      <About/>
       <Switch>
         <Route path = '/kegs' component = {KegList} />
         <Route path = '/contact' component = {Contact} />
